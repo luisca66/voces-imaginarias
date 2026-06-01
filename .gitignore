@@ -1,0 +1,24 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos grandes — van al Drive, no al repo
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.psd
+*.ai
+*.indd
+*.zip
+*.rar
+
+# Imágenes de alta resolución (las referencias ligeras sí se suben)
+*-4k.*
+*-raw.*
+*-original.*
+
+# Credenciales y API keys — NUNCA en el repo
+.env
+*.key
+secrets/
