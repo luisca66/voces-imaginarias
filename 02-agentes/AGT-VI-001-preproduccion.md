@@ -29,7 +29,7 @@ El objetivo es reducir el tiempo de pre-producción de **3 días a 4 horas**.
 |---|---|:---:|
 | Guion o sinopsis de la campaña | Archivo `.md` en la carpeta del proyecto | ✅ |
 | Brief del cliente | Archivo `brief.md` en la carpeta del proyecto | ✅ |
-| Perfil estético de Mario | Ver `00-identidad/estilo-mario.md` | ✅ |
+| Perfil estético de Mario | Ver `00-equipo/mario.md` | ✅ |
 | Referencia específica del cliente | Sección "Referencias" del brief | Opcional |
 
 ---
@@ -57,7 +57,7 @@ Hereda todas las reglas del `CLAUDE.md` raíz, más las siguientes específicas:
 
 ## Estado actual del piloto
 
-- `[ ]` Perfil estético de Mario documentado (`00-identidad/estilo-mario.md`)
+- `[ ]` Perfil estético de Mario documentado (`00-equipo/mario.md`)
 - `[ ]` Primer proyecto real procesado en paralelo
 - `[ ]` Feedback de Mario registrado en este archivo
 - `[ ]` Ajuste de prompts base según feedback
