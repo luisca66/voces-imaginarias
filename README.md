@@ -4,9 +4,20 @@ Este repositorio es el cerebro operativo del estudio. Aquí vive el contexto que
 
 ---
 
+## Quién usa qué
+
+| Persona | Computadora | Herramienta |
+|---|---|---|
+| **Carmen** | Mac | Claude Code |
+| **Mario** | Mac | Claude Code |
+| **Karla** | PC | Codex (VS Code) |
+| **Montse** | PC | Codex (VS Code) |
+
+---
+
 ## Cómo poner el proyecto en tu computadora (una sola vez)
 
-### Si usas Claude Code (Mac)
+### Carmen y Mario — Claude Code (Mac)
 
 1. Abre Claude Code
 2. Escríbele: *"Clona el repo https://github.com/luisca66/voces-imaginarias en mis Documentos"*
@@ -14,7 +25,7 @@ Este repositorio es el cerebro operativo del estudio. Aquí vive el contexto que
 4. Luego dile: *"Abre la carpeta voces-imaginarias"*
 5. Ya estás adentro — escríbele quién eres y empieza
 
-### Si usas Codex (PC)
+### Karla y Montse — Codex (PC)
 
 1. Abre VS Code
 2. Abre el panel de **Source Control** (ícono de ramas en la barra izquierda)
@@ -28,10 +39,10 @@ Este repositorio es el cerebro operativo del estudio. Aquí vive el contexto que
 
 ## Cómo actualizar cuando Luis haga cambios
 
-### Claude Code (Mac)
-Escríbele: *"Actualiza el repo voces-imaginarias con los últimos cambios"*
+### Carmen y Mario (Mac)
+Escríbele a Claude Code: *"Actualiza el repo voces-imaginarias con los últimos cambios"*
 
-### Codex (PC)
+### Karla y Montse (PC)
 En el panel de **Source Control** → clic en los tres puntos `···` → **Pull**
 
 ---

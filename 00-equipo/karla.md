@@ -1,7 +1,7 @@
 # Perfil de Karla — Asistente de Carmen
 
 > **Estado: PENDIENTE**
-> Karla: abre Claude Code en esta carpeta y escribe *"Soy Karla, quiero completar mi perfil."*
+> Karla: abre Codex en esta carpeta y escribe *"Soy Karla, quiero completar mi perfil."*
 > El agente te va a hacer las preguntas — tú solo responde con naturalidad.
 
 ---
