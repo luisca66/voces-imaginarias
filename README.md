@@ -4,37 +4,32 @@ Este repositorio es el cerebro operativo del estudio. Aquí vive el contexto que
 
 ---
 
-## Cómo unirte (primera vez)
+## Cómo instalar el proyecto en tu computadora (una sola vez)
 
-### Paso 1 — Crear tu cuenta de GitHub
-Si no tienes cuenta: [github.com/signup](https://github.com/signup)
-- Usa tu correo del estudio
-- Guarda tu usuario y contraseña
-
-### Paso 2 — Instalar GitHub Desktop
+### Paso 1 — Instalar GitHub Desktop
 Descarga en: [desktop.github.com](https://desktop.github.com)
-- Instala como cualquier aplicación
-- Inicia sesión con tu cuenta de GitHub
+Instálalo como cualquier aplicación. No necesitas crear una cuenta.
 
-### Paso 3 — Clonar el repositorio
-1. En GitHub Desktop: **File → Clone Repository**
-2. En la pestaña URL pega: `https://github.com/luisca66/voces-imaginarias`
-3. Elige dónde guardarlo en tu computadora (sugerencia: dentro de Documentos)
-4. Clic en **Clone**
+### Paso 2 — Clonar el repositorio
+1. Abre GitHub Desktop
+2. Ve a **File → Clone Repository**
+3. Selecciona la pestaña **URL**
+4. Pega: `https://github.com/luisca66/voces-imaginarias`
+5. Elige dónde guardarlo (sugerencia: Documentos)
+6. Clic en **Clone**
 
-### Paso 4 — Abrir con Claude Code
+### Paso 3 — Abrir con Claude Code
 1. Abre Claude Code
-2. Selecciona **Open Folder** y elige la carpeta `voces-imaginarias` que clonaste
-3. Escribe tu nombre y que quieres completar tu perfil
-4. El agente hace el resto
+2. Selecciona **Open Folder**
+3. Elige la carpeta `voces-imaginarias` que acabas de clonar
+4. Escríbele al agente quién eres y que quieres completar tu perfil
+5. El agente hace el resto
 
 ---
 
-## Cómo guardar tus cambios (cada vez que termines de trabajar)
+## Cómo actualizar cuando Luis haga cambios
 
-En GitHub Desktop verás los archivos que cambiaste.
-1. Escribe un mensaje corto de qué hiciste (ej. "Completé mi perfil")
-2. Clic en **Commit to main**
-3. Clic en **Push origin**
-
-Listo — tus cambios están guardados y sincronizados con el equipo.
+1. Abre GitHub Desktop
+2. Clic en **Fetch origin** (arriba a la derecha)
+3. Si hay cambios, aparece el botón **Pull** — dale clic
+4. Listo, tu carpeta está al día
