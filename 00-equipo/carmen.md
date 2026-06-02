@@ -1,7 +1,7 @@
 # Perfil de Carmen — Productora
 
 > **Estado: PENDIENTE**
-> Carmen: abre Claude Code en esta carpeta y escribe *"Soy Carmen, quiero completar mi perfil."*
+> Carmen: abre tu agente en esta carpeta y escribe *"Soy Carmen, quiero completar mi perfil."*
 > El agente te va a hacer las preguntas — tú solo responde con naturalidad.
 
 ---

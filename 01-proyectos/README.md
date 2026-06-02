@@ -8,7 +8,7 @@ Cada cliente o campaña tiene su propia carpeta aquí.
 2. Crea la carpeta: `01-proyectos/nombre-cliente/`
 3. Pega el brief como `brief.md` y complétalo
 4. Crea las subcarpetas: `guion/`, `storyboard/`, `referencias/`
-5. Pide a Claude Code que te ayude a arrancar
+5. Pide a tu agente que te ayude a arrancar
 
 ## Proyectos activos
 

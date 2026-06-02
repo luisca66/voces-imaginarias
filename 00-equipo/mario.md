@@ -1,7 +1,7 @@
 # Perfil de Mario — Director de Cine
 
 > **Estado: PENDIENTE**
-> Mario: abre Claude Code en esta carpeta y escribe *"Soy Mario, quiero completar mi perfil."*
+> Mario: abre tu agente en esta carpeta y escribe *"Soy Mario, quiero completar mi perfil."*
 > El agente te va a hacer las preguntas — tú solo responde con naturalidad.
 
 ---

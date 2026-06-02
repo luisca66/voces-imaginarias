@@ -2,48 +2,35 @@
 
 Este repositorio es el cerebro operativo del estudio. Aquí vive el contexto que los agentes de IA necesitan para trabajar con el equipo.
 
----
-
-## Quién usa qué
-
-| Persona | Computadora | Herramienta |
-|---|---|---|
-| **Carmen** | Mac | Claude Code |
-| **Mario** | Mac | Claude Code |
-| **Karla** | PC | Codex (VS Code) |
-| **Montse** | PC | Codex (VS Code) |
+Funciona igual con cualquier agente de código (Claude Code, Codex, Antigravity, etc.) — todos leen el archivo `CLAUDE.md` de esta carpeta y arrancan sabiendo quién eres y cómo opera el estudio.
 
 ---
 
 ## Cómo poner el proyecto en tu computadora (una sola vez)
 
-### Carmen y Mario — Claude Code (Mac)
+Abre tu agente y escríbele, tal cual:
 
-1. Abre Claude Code
-2. Escríbele: *"Clona el repo https://github.com/luisca66/voces-imaginarias en mis Documentos"*
-3. Claude Code lo hace por ti
-4. Luego dile: *"Abre la carpeta voces-imaginarias"*
-5. Ya estás adentro — escríbele quién eres y empieza
+1. `Clona el repo https://github.com/luisca66/voces-imaginarias en mis Documentos`
+2. `Abre la carpeta voces-imaginarias`
+3. `¿Qué es este proyecto y quién soy yo según tú?`
 
-### Karla y Montse — Codex (PC)
-
-1. Abre VS Code
-2. Abre el panel de **Source Control** (ícono de ramas en la barra izquierda)
-3. Clic en **Clone Repository**
-4. Pega: `https://github.com/luisca66/voces-imaginarias`
-5. Elige la carpeta de destino (sugerencia: Documentos)
-6. Cuando pregunte si quieres abrir el repositorio, di que sí
-7. Escríbele a Codex quién eres y empieza
+Si el agente ya te reconoce y te explica de qué va el estudio, estás dentro. De ahí en adelante solo le hablas en lenguaje natural — nada de terminal.
 
 ---
 
 ## Cómo actualizar cuando Luis haga cambios
 
-### Carmen y Mario (Mac)
-Escríbele a Claude Code: *"Actualiza el repo voces-imaginarias con los últimos cambios"*
+Escríbele a tu agente:
 
-### Karla y Montse (PC)
-En el panel de **Source Control** → clic en los tres puntos `···` → **Pull**
+> `Actualiza el repo voces-imaginarias con los últimos cambios`
+
+---
+
+## Cómo guardar tu trabajo
+
+Cuando termines algo (por ejemplo, completar tu perfil), escríbele:
+
+> `Guarda mis cambios en el repositorio con un mensaje que diga "Completé mi perfil"`
 
 ---
 

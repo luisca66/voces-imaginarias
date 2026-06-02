@@ -1,7 +1,7 @@
 # Perfil de Montse — Asistente de Mario
 
 > **Estado: PENDIENTE**
-> Montse: abre Codex en esta carpeta y escribe *"Soy Montse, quiero completar mi perfil."*
+> Montse: abre tu agente en esta carpeta y escribe *"Soy Montse, quiero completar mi perfil."*
 > El agente te va a hacer las preguntas — tú solo responde con naturalidad.
 
 ---
