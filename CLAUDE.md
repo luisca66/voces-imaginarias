@@ -53,6 +53,7 @@ Hasta que estos archivos estén completos, **tu prioridad es ayudar al equipo a 
 ## Dónde vive la información
 
 - **Este repo (GitHub / carpeta local):** contexto, perfiles, guiones, briefs en texto, plantillas, pasaportes de agentes.
+- **`05-guias/`:** manuales y guías de referencia del estudio (manual del cliente, guía del MTP, evaluaciones, gobernanza). Si alguien pregunta cómo funciona algo de la metodología, consulta ahí.
 - **Google Drive del estudio:** archivos pesados (video, renders, imágenes de alta res, contratos). Cuando necesites referenciar uno, busca el link en el brief del proyecto.
 
 ---

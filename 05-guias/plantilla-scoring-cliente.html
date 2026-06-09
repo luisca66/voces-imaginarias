@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Scoring Cliente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-dark: #0f172a;
+            --border: #e2e8f0;
+            --quote-bg: #f1f5f9;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            border: 1px solid var(--border);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-dark);
+            margin-top: 1.8em;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+        }
+        
+        h1 {
+            font-size: 2.3rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 15px;
+            margin-top: 0;
+            color: var(--primary);
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-size: 1.6rem;
+            color: var(--primary-light);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin-top: 1.5em;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+        }
+        
+        p, li {
+            font-size: 1rem;
+            margin-bottom: 0.8em;
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        blockquote {
+            background-color: var(--quote-bg);
+            border-left: 4px solid var(--accent);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            color: var(--primary-light);
+        }
+        
+        blockquote.note { border-left-color: #2563eb; background-color: #eff6ff; }
+        blockquote.tip { border-left-color: #10b981; background-color: #ecfdf5; }
+        blockquote.important { border-left-color: #8b5cf6; background-color: #f5f3ff; }
+        blockquote.warning { border-left-color: #f59e0b; background-color: #fffbeb; }
+        blockquote.caution { border-left-color: #ef4444; background-color: #fef2f2; }
+        
+        ul, ol {
+            margin-bottom: 1.2em;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 0.4em;
+        }
+        
+        code {
+            background-color: #f1f5f9;
+            color: #ef4444;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #0f172a;
+            color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+            border-radius: 0;
+            font-family: monospace;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 25px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        
+        th {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 14px;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        
+        .mermaid {
+            background-color: transparent !important;
+            border: none !important;
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            tr, pre, blockquote {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha de Scoring: Diagnóstico Native-AI</h1>
+<br/>
+<p><strong>Cliente:</strong> _______________________</p>
+<p><strong>Fecha:</strong> _________________________</p>
+<p><strong>Asesor:</strong> Luis</p>
+<p><strong>Participantes del Cliente:</strong> _________________________________________________</p>
+<br/>
+<p>---</p>
+<br/>
+<h2>1. Instrucciones de Evaluación</h2>
+<p>Para cada una de las 7 dimensiones, califica a la empresa en una escala de <strong>1 a 10</strong>, basándote en los descriptores provistos. Suma los puntos y calcula el <strong>Rewrite Score</strong> final.</p>
+<br/>
+<p>---</p>
+<br/>
+<h2>2. Dimensiones de Evaluación</h2>
+<br/>
+<h3>Dimensión 1: Propósito Masivo Transformador (MTP)</h3>
+<p><em>¿Tiene la empresa un propósito transformador que actúe como filtro operativo para la toma de decisiones y el comportamiento de agentes?</em></p>
+<ul>
+<li><strong>1-3 (Bajo):</strong> No hay MTP definido, o es una misión corporativa genérica ("ser los líderes en ventas").</li>
+<li><strong>4-7 (Medio):</strong> MTP redactado e inspirador, pero solo vive en presentaciones y paredes. No influye en el día a día.</li>
+<li><strong>8-10 (Alto):</strong> MTP claro y codificado. Funciona como un protocolo y límite operativo para agentes y humanos.</li>
+<li><strong>Puntaje (1-10):</strong> _____</li>
+</ul>
+<p><em>Notas:</em></p>
+<br/>
+<h3>Dimensión 2: Arrastre Organizacional (Organizational Drag)</h3>
+<p><em>¿Cuánta fricción burocrática y cuántas capas de aprobación existen para tomar y ejecutar una decisión ordinaria?</em></p>
+<ul>
+<li><strong>1-3 (Bajo/Lento):</strong> Cada decisión requiere reuniones semanales, múltiples firmas (mando medio, TI, finanzas) y tiene alta inercia.</li>
+<li><strong>4-7 (Moderado):</strong> Flujos claros pero lentos. El fundador o director aprueba rápido, pero la implementación se atasca en la coordinación operativa.</li>
+<li><strong>8-10 (Ágil/Fluido):</strong> Estructura sumamente plana. Las ideas se prueban en horas. Se empodera la acción sobre la planeación.</li>
+<li><strong>Puntaje (1-10):</strong> _____</li>
+</ul>
+<p><em>Notas:</em></p>
+<br/>
+<h3>Dimensión 3: Integración de la IA en la Operación</h3>
+<p><em>¿Cómo se concibe e implementa la IA actualmente dentro de la organización?</em></p>
+<ul>
+<li><strong>1-3 (Ad-hoc / Parches):</strong> Herramientas aisladas de uso personal (ej. ChatGPT para correos o resúmenes). No hay integración en sistemas.</li>
+<li><strong>4-7 (Asistido):</strong> Uso de APIs o herramientas SaaS que incorporan IA. Se automatizan tareas individuales, pero no flujos completos.</li>
+<li><strong>8-10 (Native-AI / Agentic):</strong> La IA está conectada a bases de datos propietarias. Los agentes de IA ejecutan y optimizan flujos de trabajo autónomos.</li>
+<li><strong>Puntaje (1-10):</strong> _____</li>
+</ul>
+<p><em>Notas:</em></p>
+<br/>
+<h3>Dimensión 4: Arquitectura de Datos y SaaS</h3>
+<p><em>¿Dónde y cómo residen los datos operativos críticos de la empresa?</em></p>
+<ul>
+<li><strong>1-3 (Silos Cerrados):</strong> Datos atrapados en ERPs antiguos, hojas de cálculo locales y múltiples plataformas SaaS que no se comunican entre sí.</li>
+<li><strong>4-7 (Centralizado parcial):</strong> Existen bases de datos compartidas y APIs básicas. Cuesta extraer información limpia en tiempo real.</li>
+<li><strong>8-10 (Data Lake Unificado):</strong> Todos los datos están en un repositorio central accesible, con niveles de seguridad asignados a cada objeto de dato.</li>
+<li><strong>Puntaje (1-10):</strong> _____</li>
+</ul>
+<p><em>Notas:</em></p>
+<br/>
+<h3>Dimensión 5: Foso de Inteligencia (Velocidad de Aprendizaje)</h3>
+<p><em>¿Con qué rapidez aprende la organización de sus propios datos y errores operativos?</em></p>
+<ul>
+<li><strong>1-3 (Estático):</strong> La planeación es anual o trimestral. Los errores se descubren tarde en auditorías o reportes mensuales vencidos.</li>
+<li><strong>4-7 (Reactivo):</strong> Tableros en tiempo real (<em>dashboards</em>). La dirección ve los errores rápido y actúa, pero la solución es manual.</li>
+<li><strong>8-10 (Recursivo):</strong> El software operativo optimiza y ajusta sus propias reglas en cada ciclo basándose en la retroalimentación.</li>
+<li><strong>Puntaje (1-10):</strong> _____</li>
+</ul>
+<p><em>Notas:</em></p>
+<br/>
+<h3>Dimensión 6: Resistencia Cultural e Inmunidad</h3>
+<p><em>¿Cómo reacciona el personal operativo ante la automatización por IA?</em></p>
+<ul>
+<li><strong>1-3 (Rechazo / Sabotaje):</strong> Miedo generalizado al despido. Sabotaje sutil (dar malos datos, ignorar herramientas, reportar fallas falsas).</li>
+<li><strong>4-7 (Indiferencia / Cumplimiento pasivo):</strong> La gente usa las herramientas porque se les ordena, pero no proponen mejoras ni se involucran.</li>
+<li><strong>8-10 (Gremio / Colaborativo):</strong> El equipo entiende que la IA los libera del trabajo aburrido. Actúan como supervisores entusiasmados.</li>
+<li><strong>Puntaje (1-10):</strong> _____</li>
+</ul>
+<p><em>Notas:</em></p>
+<br/>
+<h3>Dimensión 7: Autonomía y Experimentación en el Borde</h3>
+<p><em>¿Tienen los equipos o colaboradores individuales capacidad de innovar sin poner en riesgo la nave nodriza?</em></p>
+<ul>
+<li><strong>1-3 (Centralizado):</strong> Todo cambio debe pasar por el comité central o el fundador. No hay presupuesto ni tiempo para experimentos.</li>
+<li><strong>4-7 (Permisivo regulado):</strong> Se permite experimentar, pero el proceso de prueba interfiere y estresa la operación del día a día.</li>
+<li><strong>8-10 (Estructura de Borde):</strong> Capacidad de desplegar gemelos digitales o pilotos aislados rápidamente en paralelo.</li>
+<li><strong>Puntaje (1-10):</strong> _____</li>
+</ul>
+<p><em>Notas:</em></p>
+<br/>
+<p>---</p>
+<br/>
+<h2>3. Resumen de Puntajes y Cálculo del "Rewrite Score"</h2>
+<br/>
+<div class="table-container"><table>
+<thead><tr>
+<th>Dimensión</th>
+<th>Puntos (1-10)</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1. Propósito Masivo Transformador (MTP)</td>
+<td>____</td>
+</tr>
+<tr>
+<td>2. Arrastre Organizacional (Agilidad)</td>
+<td>____</td>
+</tr>
+<tr>
+<td>3. Integración de la IA</td>
+<td>____</td>
+</tr>
+<tr>
+<td>4. Arquitectura de Datos</td>
+<td>____</td>
+</tr>
+<tr>
+<td>5. Foso de Inteligencia</td>
+<td>____</td>
+</tr>
+<tr>
+<td>6. Resistencia Cultural (Inversa: 10 = sin miedo)</td>
+<td>____</td>
+</tr>
+<tr>
+<td>7. Autonomía en el Borde</td>
+<td>____</td>
+</tr>
+<tr>
+<td><strong>Puntaje Total (Suma de los 7)</strong></td>
+<td><strong>____ / 70</strong></td>
+</tr>
+</tbody></table></div>
+<br/>
+<h3>Fórmula del Rewrite Score (%)</h3>
+<p>$$\text{Rewrite Score} = \left( \frac{\text{Puntaje Total}}{70} \right) \times 100$$</p>
+<br/>
+<p><strong>Rewrite Score del Cliente:</strong> <strong>_______ %</strong></p>
+<br/>
+<p>---</p>
+<br/>
+<h2>4. Matriz de Diagnóstico y Recomendaciones</h2>
+<br/>
+<ul>
+<li><strong>70% a 100% (Listo para Native-AI):</strong> La organización tiene baja inercia, cultura abierta y datos ordenados. Se puede proceder de inmediato con la migración del primer flujo operativo hacia el Gemelo Digital en el Borde.</li>
+<li><strong>40% a 69% (Transición Híbrida):</strong> Se requiere un paso previo para mitigar la resistencia cultural y limpiar la arquitectura de datos. Recomendación: Iniciar con el Taller de MTP-como-Protocolo y un piloto muy acotado en el borde.</li>
+<li><strong>Menos del 40% (Alto Riesgo):</strong> La empresa tiene un arrastre organizacional paralizante o una cultura defensiva que saboteará el proyecto. <strong>No inicies la migración tecnológica aún.</strong> Dedica las primeras 4 semanas a hackear el sistema inmune, redactar el MTP y reducir los pasos de aprobación manual (pasar de 10 pasos a 3 o menos).</li>
+<br/>
+</ul>
+    </div>
+    
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+            flowchart: {
+                useWidth: true
+            }
+        });
+    </script>
+</body>
+</html>

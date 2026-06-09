@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Evaluacion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-dark: #0f172a;
+            --border: #e2e8f0;
+            --quote-bg: #f1f5f9;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            border: 1px solid var(--border);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-dark);
+            margin-top: 1.8em;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+        }
+        
+        h1 {
+            font-size: 2.3rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 15px;
+            margin-top: 0;
+            color: var(--primary);
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-size: 1.6rem;
+            color: var(--primary-light);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin-top: 1.5em;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+        }
+        
+        p, li {
+            font-size: 1rem;
+            margin-bottom: 0.8em;
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        blockquote {
+            background-color: var(--quote-bg);
+            border-left: 4px solid var(--accent);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            color: var(--primary-light);
+        }
+        
+        blockquote.note { border-left-color: #2563eb; background-color: #eff6ff; }
+        blockquote.tip { border-left-color: #10b981; background-color: #ecfdf5; }
+        blockquote.important { border-left-color: #8b5cf6; background-color: #f5f3ff; }
+        blockquote.warning { border-left-color: #f59e0b; background-color: #fffbeb; }
+        blockquote.caution { border-left-color: #ef4444; background-color: #fef2f2; }
+        
+        ul, ol {
+            margin-bottom: 1.2em;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 0.4em;
+        }
+        
+        code {
+            background-color: #f1f5f9;
+            color: #ef4444;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #0f172a;
+            color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+            border-radius: 0;
+            font-family: monospace;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 25px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        
+        th {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 14px;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        
+        .mermaid {
+            background-color: transparent !important;
+            border: none !important;
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            tr, pre, blockquote {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guía para el Taller de Diagnóstico Native-AI (Sesión de 2 Horas)</h1>
+<br/>
+<p>Esta guía explica al asesor cómo estructurar y dirigir la primera reunión de diagnóstico con el cliente para completar la <a href="file:///c:/Users/Luis/Documents/claude_code/migracion-empresas/02-metodologia/01-diagnostico/plantilla-scoring-cliente.md">Ficha de Scoring</a> de forma efectiva.</p>
+<br/>
+<p>---</p>
+<br/>
+<h2>1. Cronograma de la Sesión (120 Minutos)</h2>
+<br/>
+<h3>Bloque 1: Apertura y Despertar de la Urgencia (20 min)</h3>
+<ul>
+<li><strong>Objetivo:</strong> Captar la atención total del CEO y romper el escepticismo inicial.</li>
+<li><strong>Acción:</strong></li>
+</ul>
+<ol>
+<li>Breve introducción: <em>"La IA no es una herramienta de oficina; es una nueva forma de coordinar y operar empresas"</em>.</li>
+<li>Lanza la <strong>Pregunta de Oro</strong>: <em>"¿Qué línea de alto margen de tu negocio puede replicar un startup de 2 personas con agentes de IA en 90 días?"</em></li>
+<li>Discute el concepto de la <strong>Transición Turbulenta (5-7 años)</strong>: <em>"Las empresas que no migren a modelos de inteligencia en este periodo simplemente dejarán de ser competitivas por costos de coordinación"</em>.</li>
+<br/>
+</ol>
+<h3>Bloque 2: Entrevista y Scoring Colectivo (70 min - 10 min por dimensión)</h3>
+<ul>
+<li><strong>Objetivo:</strong> Evaluar las 7 dimensiones con el equipo clave.</li>
+<li><strong>Táctica:</strong> No hagas una encuesta de opción múltiple aburrida. Haz preguntas conversacionales abiertas. Deja que el equipo debata sobre sus cuellos de botella y registra las respuestas. Califica al final de cada bloque.</li>
+<li><strong>Preguntas detonadoras recomendadas:</strong></li>
+<li><em>MTP:</em> <em>"Si tuvieran que dar autonomía a 10 agentes de IA para que respondan correos de clientes hoy, ¿qué reglas éticas y de marca están escritas para que no cometan una locura?"</em></li>
+<li><em>Arrastre:</em> <em>"Cuando un cliente solicita un descuento especial o hay un error de facturación, ¿cuántas personas intervienen y cuántas reuniones o aprobaciones toma resolverlo?"</em></li>
+<li><em>Integración IA:</em> <em>"¿Quién lidera la estrategia de IA en la empresa? ¿Es una iniciativa de los empleados o es una política central de la dirección?"</em></li>
+<li><em>Datos:</em> <em>"Si hoy quisiéramos entrenar a una IA con todo el historial de ventas e interacciones de los últimos 3 años para predecir la demanda de inventario, ¿dónde están esos datos? ¿Cuánto tomaría extraerlos limpios?"</em></li>
+<li><em>Foso:</em> <em>"Cuando un proceso falla en la empresa, ¿cómo se entera el sistema? ¿Cuánto tarda en corregirse el flujo de trabajo para que no vuelva a ocurrir?"</em></li>
+<li><em>Resistencia:</em> <em>"¿Qué opina el personal operativo de nivel de entrada sobre la IA? ¿Tienen miedo de perder su trabajo? ¿Hay sabotaje pasivo?"</em></li>
+<li><em>Borde:</em> <em>"Si quisiéramos probar una herramienta de agentes de IA en un área pequeña mañana, ¿podríamos hacerlo sin afectar el sistema de facturación principal?"</em></li>
+<br/>
+</ul>
+<h3>Bloque 3: Cálculo y Diagnóstico (15 min)</h3>
+<ul>
+<li><strong>Objetivo:</strong> Calcular el <strong>Rewrite Score</strong> y situar al cliente en la matriz de recomendaciones.</li>
+<li><strong>Acción:</strong> Suma los puntajes en vivo y muestra el resultado porcentual. Explica claramente la recomendación estratégica correspondiente (Listo para migrar, Transición Híbrida o Hackear el sistema inmune primero).</li>
+<br/>
+</ul>
+<h3>Bloque 4: Cierre y Próximos Pasos (15 min)</h3>
+<ul>
+<li><strong>Objetivo:</strong> Asegurar el compromiso para iniciar el proyecto.</li>
+<li><strong>Acción:</strong> Presentar a grandes rasgos el plan de 90 días y definir el flujo prescriptivo piloto que se copiará al Gemelo Digital en el Borde.</li>
+<br/>
+</ul>
+    </div>
+    
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+            flowchart: {
+                useWidth: true
+            }
+        });
+    </script>
+</body>
+</html>
